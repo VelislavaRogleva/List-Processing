@@ -9,7 +9,7 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         List<String> list = Arrays.asList(reader.readLine().split("\\s+"));
-        printList(list);
+        ListManager.printList(list);
 
         while (true) {
             String[] commandArgs = reader.readLine().split("\\s+");
@@ -26,7 +26,4 @@ public class Main {
 
     }
 
-    private static void printList(List<String> list) {
-        System.out.println(String.join(" ", list));
-    }
 }
