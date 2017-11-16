@@ -22,6 +22,18 @@ public class Main {
                 case "prepend":
                     ListManager.prepend(list, commandArgs);
                     break;
+                case"reverse":
+                    ListManager.reverse(list, commandArgs);
+                    break;
+                case"insert":
+                    ListManager.insert(list, commandArgs);
+                    break;
+                case"delete":
+                    ListManager.delete(list,commandArgs);
+                    break;
+                    default:
+                        System.out.println("Error: invalid command");
+                        break;
 
             }
 
