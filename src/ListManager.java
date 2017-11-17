@@ -1,3 +1,4 @@
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -65,4 +66,34 @@ class ListManager {
             }
         }
     }
+
+    public static void roll(List<String> list, String[] arr){
+        if (arr.length != 2 || !arr[1].equals("left") && !arr[1].equals("right")){
+
+            System.out.println("Error: invalid command parameters");
+
+        } else if(arr[1].equals("right")){
+
+            Collections.rotate(list,1);
+
+            ListManager.printList(list);
+        } else {
+            Collections.rotate(list,-1);
+
+            ListManager.printList(list);
+        }
+    }
+
+    public static void sort(List<String> list, String[] arr){
+        if (arr.length != 1){
+
+            System.out.println("Error: invalid command parameters");
+
+        } else {
+            Collections.sort(list);
+
+            ListManager.printList(list);
+        }
+    }
+
 }

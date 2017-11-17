@@ -31,6 +31,12 @@ public class Main {
                 case "delete":
                     ListManager.delete(list, commandArgs);
                     break;
+                case "roll":
+                    ListManager.roll(list,commandArgs);
+                    break;
+                case "sort":
+                    ListManager.sort(list,commandArgs);
+                    break;
                 default:
                     System.out.println("Error: invalid command");
                     break;
