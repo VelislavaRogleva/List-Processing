@@ -36,7 +36,7 @@ class ListManager {
     }
 
     public static void insert(List<String> list, String[] arr) {
-        if (arr.length != 3 || !arr[1].matches("-*\\d")){
+        if (arr.length != 3 || !arr[1].matches("-*\\d+")){
             System.out.println("Error: invalid command parameters");
         }
         else {
