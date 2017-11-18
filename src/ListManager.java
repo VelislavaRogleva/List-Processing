@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -93,6 +94,24 @@ class ListManager {
             Collections.sort(list);
 
             ListManager.printList(list);
+        }
+    }
+    public static void count(List<String> list, String[] arr){
+        if (arr.length != 2) {
+            System.out.println("Error: invalid command parameters");
+        }
+        else {
+            int frequency = Collections.frequency(list, arr[1]);
+            System.out.println(frequency);
+        }
+    }
+    public static void end(List<String> list, String[] arr) {
+        if  (arr.length != 1) {
+            System.out.println( "Error: invalid command parameters");
+        }
+        else {
+            System.out.println( "Finished");
+            System.exit(0);
         }
     }
 
