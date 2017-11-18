@@ -37,6 +37,12 @@ public class Main {
                 case "sort":
                     ListManager.sort(list,commandArgs);
                     break;
+                case "count":
+                    ListManager.count(list,commandArgs);
+                    break;
+                case "end":
+                    ListManager.end(list,commandArgs);
+                    break;
                 default:
                     System.out.println("Error: invalid command");
                     break;
